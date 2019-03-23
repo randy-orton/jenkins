@@ -63,6 +63,7 @@ public class PersonController {
     @RequestMapping(value = "/personschange", method = RequestMethod.GET)
 	public String listPersonschange(Model model) {
 		model.addAttribute("person", new Person());
+		//chnage is hereeeee
 		model.addAttribute("listPersons", this.personService.listPersons());
 		return "person2";
 	}
