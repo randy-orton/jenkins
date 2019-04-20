@@ -48,7 +48,7 @@ public class PersonController {
 	
 	@RequestMapping("/remove/{id}")
     public String removePerson(@PathVariable("id") int id){
-		
+		//hiiiiii
         this.personService.removePerson(id);
         return "redirect:/persons";
     }
