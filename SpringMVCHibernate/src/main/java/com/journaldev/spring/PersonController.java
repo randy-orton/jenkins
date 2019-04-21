@@ -20,6 +20,7 @@ public class PersonController {
 	@Autowired(required=true)
 	@Qualifier(value="personService")
 	public void setPersonService(PersonService ps){
+		//hiiiiiiiiii
 		this.personService = ps;
 	}
 	
@@ -48,7 +49,7 @@ public class PersonController {
 	
 	@RequestMapping("/remove/{id}")
     public String removePerson(@PathVariable("id") int id){
-		//hiiiiii
+		//hiiiiiiiii
         this.personService.removePerson(id);
         return "redirect:/persons";
     }
