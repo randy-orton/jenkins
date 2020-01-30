@@ -29,9 +29,9 @@
 		destroy-method="close">
 		<beans:property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<beans:property name="url"
-			value="jdbc:mysql://mysql2019.c7pemnrcv4hw.ap-south-1.rds.amazonaws.com:3306/TestDB" />
-		<beans:property name="username" value="mysql2019" />
-		<beans:property name="password" value="mysql2019" />
+			value="jdbc:mysql://localhost:3306/testdb" />
+		<beans:property name="username" value="root" />
+		<beans:property name="password" value="root" />
 	</beans:bean>
 
 	<!-- Hibernate 4 SessionFactory Bean definition -->
@@ -46,7 +46,7 @@
 		</beans:property>
 		<beans:property name="hibernateProperties">
 			<beans:props>
-			   <beans:prop key="hbm2ddl.auto">create
+			   <beans:prop key="hbm2ddl.auto">update
 				</beans:prop>
 				<beans:prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
 				</beans:prop>
